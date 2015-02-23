@@ -1,2 +1,8 @@
 #!/bin/bash
 scrapy crawl scrapetorr -o output.json
+python match.py > matched
+python replace.py
+rm ./output.json
+rm ./replace
+rm ./matched
+cat -n replace_out
